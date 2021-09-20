@@ -1,0 +1,17 @@
+# Compiled source #
+###################
+*.idea
+*.target
+*.pom.xml
+
+
+
+# Packages #
+############
+
+
+# Logs and databases #
+######################
+
+# OS generated files #
+######################
