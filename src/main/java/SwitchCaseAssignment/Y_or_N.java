@@ -22,7 +22,8 @@ public class Y_or_N {
 
         switch (answer)
         {
-            case 'y' :
+            case 'y':
+            case 'Y':
                 System.out.println("You entered YES");
                 break;
             case 'n' :
