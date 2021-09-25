@@ -27,6 +27,7 @@ public class Y_or_N {
                 System.out.println("You entered YES");
                 break;
             case 'n' :
+            case 'N' :
                 System.out.println("You entered NO");
                 break;
             default:
