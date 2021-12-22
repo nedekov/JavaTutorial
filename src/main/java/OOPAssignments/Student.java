@@ -11,26 +11,60 @@ package OOPAssignments;
 */
 
 
-    public  class Student {
+        class Student {
 
-        public String name;
-        public int fNumber;
+         String name;
+         int fNumber;
+         int attendance;
 
         Student(){
             this.name = "John Doe";
             this.fNumber = 1912;
+            this.attendance = 10;
         }
 
-        public void takeExam(){
+         void takeExam(){
             System.out.println("Taking exam");
         }
 
-        public static void main(String[] args){
+         static void main(String[] args){
             Student student = new Student();
             System.out.println(student.fNumber);
             System.out.println(student.name);
             student.takeExam();
 
         }
+
+
     }
+
+    class Mathematician extends Student{
+    private String certification = "bachelor's degree in math";
+
+        //getter
+        String getCertification(){
+            return certification;
+        }
+
+        //setter
+         void setCertification(String newCertification){
+            this.certification = newCertification;
+        }
+
+        }
+
+
+
+    class Athlete extends Student{
+
+    }
+
+    class NewMathematician extends Mathematician{
+        @Override
+        void setCertification (String newCertification) {
+            super.setCertification(newCertification);
+        }
+    }
+
+
 
